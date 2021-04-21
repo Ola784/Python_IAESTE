@@ -16,11 +16,9 @@ def mirror(text):
         reversedstr=''.join(reversed(L[i]))
         a.append('* '+reversedstr+' '*roznica+' *')
     a.append(word2)
-    """
-    b=[]
-    for i in range(len(b)):
-        b[i]='{:>12}  {:>12}  {:>12}'.format(a[i])
-        print(b[i])"""
+    for i in range(len(a)):
+        a[i]=a[i].rjust(5)
+    #nie mam pojecia czemu nie przechodza mi testy, w konsoli wyglada ok
     return a
 
 #dl najdluzszego + 4
